@@ -68,4 +68,22 @@ public class Mobil {
 
 
     }
+
+    public void simpan(){
+        System.out.println("INSERT INTO mobil VALUES ('" + this.warna +"',"+this.tahunProduksi+")");
+    }
+
+    public void simpan(String warna){
+        System.out.println("INSERT INTO mobil VALUES ('" + warna +"')");
+    }
+
+    public void simpan(int tahunProduksi){
+        System.out.println("=================");
+        System.out.println("INSERT INTO mobil VALUES (" + tahunProduksi +")");
+
+    }
+
+    public void simpan(String merk, int tahunProduksi){
+
+    }
 }

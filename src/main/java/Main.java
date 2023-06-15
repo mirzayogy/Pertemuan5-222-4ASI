@@ -1,4 +1,7 @@
 import model.Mobil;
+import model.MobilSport;
+
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,7 +41,15 @@ public class Main {
         System.out.println(tesHijau.getWarna());
         System.out.println(tesHijau.getTahunProduksi());
 
-        MyFrame mf = new MyFrame();
-        mf.setVisible(true);
+//        tesHijau.simpan();
+//        tesHijau.simpan("Merah");
+
+//        JOptionPane.showMessageDialog(null,"Ini Pesannya");
+//        JOptionPane.showMessageDialog(null,"ini pesan","ini judul",JOptionPane.ERROR_MESSAGE);
+
+        MobilSport ms = new MobilSport();
+        ms.simpan(2023);
+
+        tesHijau.simpan(1998);
     }
 }
